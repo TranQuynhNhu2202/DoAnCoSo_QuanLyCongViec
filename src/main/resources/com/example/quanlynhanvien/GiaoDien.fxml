@@ -9,14 +9,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quanlynhanvien.GiaoDienController">
    <children>
       <ImageView fitHeight="45.0" fitWidth="200.0" layoutX="501.0" layoutY="14.0" AnchorPane.leftAnchor="501.0" AnchorPane.topAnchor="14.0">
          <image>
             <Image url="@image/dhdn.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="500.0" fitWidth="400.0">
+      <ImageView fx:id="password" fitHeight="500.0" fitWidth="400.0">
          <image>
             <Image url="@image/z5255114794124_44b1f6766235dd5f0233be1952130756.jpg" />
          </image>
@@ -26,7 +26,6 @@
             <Font name="System Bold" size="28.0" />
          </font>
       </Label>
-      <TextField layoutX="443.0" layoutY="176.0" prefHeight="26.0" prefWidth="308.0" />
       <Label layoutX="443.0" layoutY="136.0" text="Email">
          <font>
             <Font size="17.0" />
@@ -37,8 +36,7 @@
             <Font size="17.0" />
          </font>
       </Label>
-      <PasswordField layoutX="443.0" layoutY="265.0" prefHeight="26.0" prefWidth="308.0" />
-      <Button layoutX="445.0" layoutY="323.0" mnemonicParsing="false" style="-fx-background-color: Navy;" text="Login" textFill="#fcfcfc">
+      <Button fx:id="login" layoutX="445.0" layoutY="323.0" mnemonicParsing="false" style="-fx-background-color: Navy;" text="Login" textFill="#fcfcfc">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
@@ -48,10 +46,12 @@
             <Font size="17.0" />
          </font>
       </Label>
-      <Button layoutX="548.0" layoutY="394.0" mnemonicParsing="false" style="-fx-background-color: Navy;" text="Sign Up" textFill="#fcfcfc">
+      <Button fx:id="signup" layoutX="548.0" layoutY="394.0" mnemonicParsing="false" style="-fx-background-color: Navy;" text="Sign Up" textFill="#fcfcfc">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </Button>
+      <TextField layoutX="445.0" layoutY="175.0" prefHeight="26.0" prefWidth="308.0" />
+      <TextField layoutX="445.0" layoutY="265.0" prefHeight="26.0" prefWidth="308.0" />
    </children>
 </AnchorPane>
