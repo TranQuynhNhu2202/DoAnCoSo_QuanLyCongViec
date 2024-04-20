@@ -9,17 +9,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quanlynhanvien.ThanhTichController">
    <children>
       <Label layoutX="10.0" layoutY="10.0" text="Thành tích">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
          <graphic>
-            <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="colum_nhanvien" fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@medal-.png" />
+                  <Image url="@image/medal-.png" />
                </image>
             </ImageView>
          </graphic>
@@ -27,8 +26,8 @@
       <Accordion layoutX="83.0" layoutY="122.0" />
       <TableView layoutX="145.0" layoutY="62.0" prefHeight="350.0" prefWidth="350.0">
         <columns>
-          <TableColumn prefWidth="137.6000213623047" text="Nhân viên" />
-          <TableColumn prefWidth="211.99993896484375" text="Thành tích" />
+          <TableColumn fx:id="colum_nhanvien" prefWidth="137.6000213623047" text="Nhân viên" />
+          <TableColumn fx:id="colum_thanhtich" prefWidth="211.99993896484375" text="Thành tích" />
         </columns>
       </TableView>
    </children>
