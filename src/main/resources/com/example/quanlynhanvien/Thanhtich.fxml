@@ -24,7 +24,7 @@
          </graphic>
       </Label>
       <Accordion layoutX="83.0" layoutY="122.0" />
-      <TableView layoutX="145.0" layoutY="62.0" prefHeight="350.0" prefWidth="350.0">
+      <TableView fx:id="table_thanhtich" layoutX="145.0" layoutY="62.0" prefHeight="350.0" prefWidth="350.0">
         <columns>
           <TableColumn fx:id="colum_nhanvien" prefWidth="137.6000213623047" text="Nhân viên" />
           <TableColumn fx:id="colum_thanhtich" prefWidth="211.99993896484375" text="Thành tích" />
