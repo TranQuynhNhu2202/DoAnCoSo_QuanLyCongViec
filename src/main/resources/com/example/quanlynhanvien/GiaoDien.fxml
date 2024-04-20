@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.TextField?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -13,12 +13,12 @@
    <children>
       <ImageView fitHeight="45.0" fitWidth="200.0" layoutX="501.0" layoutY="14.0" AnchorPane.leftAnchor="501.0" AnchorPane.topAnchor="14.0">
          <image>
-            <Image url="@f2655033dad2768c2fc3.jpg" />
+            <Image url="@image/dhdn.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="500.0" fitWidth="400.0">
          <image>
-            <Image url="@pngtree-blue-technology-world-map-earth-cool-background-picture-image_923647.jpg" />
+            <Image url="@image/z5255114794124_44b1f6766235dd5f0233be1952130756.jpg" />
          </image>
       </ImageView>
       <Label layoutX="547.0" layoutY="77.0" prefHeight="40.0" prefWidth="88.0" text="LOGIN" textAlignment="CENTER" textFill="NAVY">
