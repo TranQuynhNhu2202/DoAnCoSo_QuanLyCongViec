@@ -32,7 +32,7 @@ public class GiaoDienDangKyController implements Initializable {
                 String ten = tf_fullname.getText();
                 String Email = tf_mail.getText();
                 String password = tf_password.getText();
-                if (ten != "" && Email != "" && password != ""){
+                if (!ten.isEmpty() && !Email.isEmpty() && !password.isEmpty()){
                     ConnectDB connectDB = new ConnectDB();
                     String query ="INSERT INTO `taikhoan`(`Ten`, `password`, `Email`) VALUES ('"+ten+"','"+Email+"','"+password+"')";
                     try {
@@ -47,8 +47,6 @@ public class GiaoDienDangKyController implements Initializable {
                 }else {
                     DBUtils.printAlertMsg("Thông Báo","Vui lòng nhập đầy đủ thông tin!");
                 }
-
-
 
             }
         });
