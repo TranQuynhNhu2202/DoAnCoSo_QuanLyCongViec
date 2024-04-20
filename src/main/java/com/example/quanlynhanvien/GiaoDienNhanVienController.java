@@ -12,16 +12,7 @@ import java.util.ResourceBundle;
 
 public class GiaoDienNhanVienController implements Initializable {
     @FXML
-    private AnchorPane Acp_nhanvien;
-
-    @FXML
-    private AnchorPane Anp_congviec;
-
-    @FXML
-    private AnchorPane Anp_nvnghiviec;
-
-    @FXML
-    private Label Anp_tiendo;
+    private AnchorPane Acp_nhanvien_ShowFile;
 
     @FXML
     private Button bt_congviec;
@@ -37,12 +28,6 @@ public class GiaoDienNhanVienController implements Initializable {
 
     @FXML
     private Button bt_nhom;
-
-    @FXML
-    private Label lb_congviec;
-
-    @FXML
-    private Label lb_tienhanhcuochop;
 
     @FXML
     private TextField tf_timkiem;
