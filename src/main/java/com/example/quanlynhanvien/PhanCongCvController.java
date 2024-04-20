@@ -3,46 +3,37 @@ package com.example.quanlynhanvien;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.scene.control.TableView;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class ThongtinNvController implements Initializable {
+public class PhanCongCvController implements Initializable {
+    @FXML
+    private Button sua;
 
     @FXML
-    private Label chucvu;
+    private TextArea ta_mota;
 
     @FXML
-    private TableColumn<?, ?> cot_Hoten;
+    private TableColumn<?, ?> table_Id;
 
     @FXML
-    private TableColumn<?, ?> cot_ID;
+    private TableColumn<?, ?> table_cv;
 
     @FXML
-    private Label diachi;
+    private TextField tf_Ngaybd;
 
     @FXML
-    private Label gioitinh;
+    private TextField tf_Ngayketthuc;
 
     @FXML
-    private Label gmail;
+    private TextField tf_Nguoithuchien;
 
     @FXML
-    private Label hoten;
-
-    @FXML
-    private Label id;
-
-    @FXML
-    private Label ngay_thamgia;
-
-    @FXML
-    private Label ngaysinh;
-
-    @FXML
-    private Label so_dienthoai;
+    private TextField tf_cv;
 
     @FXML
     private Button them;
@@ -51,7 +42,7 @@ public class ThongtinNvController implements Initializable {
     private Button xoa;
 
     @FXML
-    private TableView<?> table_Thongtin;
+    private TableView<?> table_tong;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
