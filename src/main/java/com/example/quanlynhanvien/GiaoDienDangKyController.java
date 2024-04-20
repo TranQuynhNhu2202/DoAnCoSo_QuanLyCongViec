@@ -1,28 +1,25 @@
 package com.example.quanlynhanvien;
 
-
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.image.ImageView;
-
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class GiaoDienController implements Initializable {
+public class GiaoDienDangKyController implements Initializable {
+    @FXML
+    private TextField tf_fullname;
+    @FXML
+    private TextField tf_mail;
 
     @FXML
-    private TextField email;
+    private TextField tf_password;
     @FXML
-    private ImageView password;
-    @FXML
-    private Button login;
-    @FXML
-    private Button signup;
+    private Button bt_signup;
 
-    private TextField tf_email;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 

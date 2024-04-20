@@ -13,37 +13,25 @@
    <children>
       <AnchorPane layoutY="50.0" prefHeight="450.0" prefWidth="120.0">
          <children>
-            <Button alignment="BASELINE_LEFT" layoutX="7.0" layoutY="148.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: white;" text="Phân công việc" textAlignment="CENTER">
+            <Button alignment="BASELINE_LEFT" layoutX="6.0" layoutY="209.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: white;" text="Công việc" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@multiple-users-silhouette.png" />
+                        <Image url="@image/suitcase.png" />
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Button alignment="BASELINE_LEFT" layoutX="7.0" layoutY="85.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: white;" text="Thông tin NV" textAlignment="CENTER">
+            <Button alignment="BASELINE_LEFT" layoutX="6.0" layoutY="136.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: white;" text="Lý lịch" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@id-card.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button alignment="BASELINE_LEFT" layoutX="7.0" layoutY="213.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: white;" text="Tiến độ CV" textAlignment="CENTER">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-               <graphic>
-                  <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@suitcase.png" />
+                        <Image url="@image/id-card.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -55,31 +43,31 @@
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@logout.png" />
+                        <Image url="@image/logout.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="BASELINE_LEFT" layoutX="5.0" layoutY="276.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: white;" text="Thành tích" textAlignment="CENTER">
+            <Button alignment="BASELINE_LEFT" layoutX="6.0" layoutY="52.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: white;" text="Home" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@medal-.png" />
+                        <Image url="@image/home.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="BASELINE_LEFT" layoutX="7.0" layoutY="22.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: white;" text="Home" textAlignment="CENTER">
+            <Button alignment="BASELINE_LEFT" layoutX="6.0" layoutY="278.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: white;" text="Nhóm" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@home.png" />
+                        <Image url="@image/multiple-users-silhouette.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -90,61 +78,94 @@
          <children>
             <ImageView fitHeight="30.0" fitWidth="100.0" layoutX="27.0" layoutY="11.0">
                <image>
-                  <Image url="@f2655033dad2768c2fc3.jpg" />
+                  <Image url="@image/z5254868399088_f4443911db51c8792ef6aca7dd2a856c.jpg" />
                </image>
             </ImageView>
-            <TextField layoutX="300.0" layoutY="13.0" prefWidth="200.0" promptText="Tìm kiếm nhanh..." style="-fx-background-color: white;" />
+            <TextField layoutX="303.0" layoutY="13.0" prefWidth="200.0" promptText="Tìm kiếm nhanh..." style="-fx-background-color: white;" />
             <ImageView fitHeight="13.0" fitWidth="13.0" layoutX="482.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@magnifying-glass.png" />
+                  <Image url="@image/magnifying-glass.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
       <Separator layoutX="149.0" layoutY="50.0" orientation="VERTICAL" prefHeight="450.0" style="-fx-background-color: navy;" />
-      <AnchorPane layoutX="237.0" layoutY="202.0" prefHeight="120.0" prefWidth="220.0" style="-fx-background-color: #99FFFF;">
+      <AnchorPane fx:id="pane_content" layoutX="155.0" layoutY="50.0" prefHeight="450.0" prefWidth="646.0">
          <children>
-            <ImageView fitHeight="100.0" fitWidth="60.0" layoutX="154.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@user.png" />
-               </image>
-            </ImageView>
-            <Label layoutX="13.0" layoutY="83.0" text="Nhân viên">
+            <Label layoutX="21.0" layoutY="24.0" text="Tổng quan">
                <font>
-                  <Font name="System Bold" size="18.0" />
+                  <Font name="System Bold Italic" size="22.0" />
                </font>
             </Label>
-            <Label layoutX="12.0" layoutY="14.0" text="10">
+            <Label alignment="BASELINE_CENTER" layoutX="21.0" layoutY="104.0" text="Tiến hành cuộc họp thường kỳ (4/10/2024)">
                <font>
-                  <Font name="System Bold" size="35.0" />
+                  <Font name="System Italic" size="18.0" />
                </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/new.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </Label>
+            <Label alignment="BASELINE_CENTER" layoutX="21.0" layoutY="64.0" text="Công việc: Tạo cơ sở dữ liệu ">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/new.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <AnchorPane layoutX="93.0" layoutY="165.0" prefHeight="120.0" prefWidth="220.0" style="-fx-background-color: #99FFFF;">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="60.0" layoutX="154.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/user.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="13.0" layoutY="83.0" text="Nhân viên">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="14.0" text="10">
+                     <font>
+                        <Font name="System Bold" size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="358.0" layoutY="165.0" prefHeight="120.0" prefWidth="220.0" style="-fx-background-color: #FFCC99;">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="60.0" layoutX="154.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/circular-diagram.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="11.0" layoutY="84.0" text=" NV nghỉ việc">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="18.0" text="2">
+                     <font>
+                        <Font name="System Bold" size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="499.0" layoutY="202.0" prefHeight="120.0" prefWidth="220.0" style="-fx-background-color: #FFCC99;">
-         <children>
-            <ImageView fitHeight="100.0" fitWidth="60.0" layoutX="154.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@circular-diagram.png" />
-               </image>
-            </ImageView>
-            <Label layoutX="11.0" layoutY="84.0" text=" NV nghỉ việc">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="13.0" layoutY="18.0" text="2">
-               <font>
-                  <Font name="System Bold" size="35.0" />
-               </font>
-            </Label>
-         </children>
-      </AnchorPane>
-      <AnchorPane layoutX="237.0" layoutY="357.0" prefHeight="120.0" prefWidth="220.0" style="-fx-background-color: #99FF99;">
+      <AnchorPane layoutX="247.0" layoutY="367.0" prefHeight="120.0" prefWidth="220.0" style="-fx-background-color: #99FF99;">
          <children>
             <ImageView fitHeight="100.0" fitWidth="60.0" layoutX="156.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@file%20(1).png" />
+                  <Image url="@image/vanban.png" />
                </image>
             </ImageView>
             <Label layoutX="13.0" layoutY="83.0" text="Tiến độ">
@@ -159,11 +180,11 @@
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="499.0" layoutY="357.0" prefHeight="120.0" prefWidth="220.0" style="-fx-background-color: #FFFF99;">
+      <AnchorPane layoutX="509.0" layoutY="367.0" prefHeight="120.0" prefWidth="220.0" style="-fx-background-color: #FFFF99;">
          <children>
             <ImageView fitHeight="100.0" fitWidth="60.0" layoutX="151.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@job-seeker.png" />
+                  <Image url="@image/job-seeker.png" />
                </image>
             </ImageView>
             <Label layoutX="13.0" layoutY="82.0" text="Công việc">
@@ -178,34 +199,5 @@
             </Label>
          </children>
       </AnchorPane>
-      <Label layoutX="167.0" layoutY="64.0" text="Tổng quan">
-         <font>
-            <Font name="System Bold Italic" size="22.0" />
-         </font>
-      </Label>
-      <Label alignment="BASELINE_CENTER" layoutX="167.0" layoutY="106.0" text="Tiến hành cuộc họp thường kỳ (4/10/2024)">
-         <font>
-            <Font name="System Italic" size="18.0" />
-         </font>
-         <graphic>
-            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@new.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Label>
-      <Label alignment="BASELINE_CENTER" layoutX="167.0" layoutY="146.0" text="Công việc: Tạo cơ sở dữ liệu ">
-         <font>
-            <Font name="System Italic" size="18.0" />
-         </font>
-         <graphic>
-            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@new.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Label>
    </children>
 </AnchorPane>
