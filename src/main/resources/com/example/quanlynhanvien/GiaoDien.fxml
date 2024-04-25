@@ -51,7 +51,7 @@
             <Font name="System Bold" size="17.0" />
          </font>
       </Button>
-      <TextField layoutX="445.0" layoutY="175.0" prefHeight="26.0" prefWidth="308.0" />
-      <TextField layoutX="445.0" layoutY="265.0" prefHeight="26.0" prefWidth="308.0" />
+      <TextField fx:id="email" layoutX="445.0" layoutY="175.0" prefHeight="26.0" prefWidth="308.0" />
+      <PasswordField fx:id="matkhau" layoutX="447.0" layoutY="266.0" prefHeight="26.0" prefWidth="308.0" />
    </children>
 </AnchorPane>

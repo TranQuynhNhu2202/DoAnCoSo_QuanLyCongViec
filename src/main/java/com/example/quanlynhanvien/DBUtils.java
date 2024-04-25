@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class DBUtils {
-    public static void changeScene(ActionEvent actionEvent,String fxmlFile, String title ) throws IOException {
+    public static void changeScene(ActionEvent actionEvent,String fxmlFile, String title, int height, int width ) throws IOException {
         Parent root = null;
         root = FXMLLoader.load(DBUtils.class.getResource(fxmlFile));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
@@ -30,6 +30,8 @@ public class DBUtils {
         // Đặt vị trí mới cho cửa sổ
         stage.setX(centerX);
         stage.setY(centerY);
+        stage.setWidth(width);
+        stage.setHeight(height);
         //
         stage.show();
     }
