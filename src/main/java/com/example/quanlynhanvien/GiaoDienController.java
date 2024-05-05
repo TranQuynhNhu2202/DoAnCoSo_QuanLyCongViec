@@ -40,27 +40,51 @@ public class GiaoDienController implements Initializable {
             public void handle(ActionEvent actionEvent) {
                 String Email = email.getText();
                 String passWord = matkhau.getText();
-                if(Email != "" && passWord != "") {
+
+                if(Email != "" && passWord != "" && Email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$")) {
                     ConnectDB connectDB = new ConnectDB();
-                    String query ="SELECT `Email` FROM `taikhoan` WHERE Email='"+Email+"' and password='"+passWord+"'";
+                    String query = "SELECT `Email`, `Level` FROM `taikhoan` WHERE `password` = '" + passWord + "' AND `Email` = '" + Email + "'";
                     boolean check = false;
+                    int level = -1;
                     try {
                         ResultSet datalogin = connectDB.getStmt().executeQuery(query);
-                        check = datalogin.next();
+                        while (datalogin.next()){
+                            check = true;
+                            level = datalogin.getInt("Level");
+                        }
                     } catch (SQLException e) {
                         throw new RuntimeException(e);
 
                     }
 
                     if(check == true) {
-                        try {
-                            DBUtils.changeScene(actionEvent, "Gocc.fxml", "Trang quản lý", 500, 800);
-                        } catch (IOException e) {
-                            throw new RuntimeException(e);
+                        if(level == 1){
+                            try {
+                                DBUtils.changeScene(actionEvent, "GiaoDienNhanVien.fxml", "Trang nhân viên", 500, 800);
+                            } catch (IOException e) {
+                                throw new RuntimeException(e);
+                            }
+                        }else {
+                            try {
+                                DBUtils.changeScene(actionEvent, "Gocc.fxml", "Trang quản lý", 500, 800);
+                            } catch (IOException e) {
+                                throw new RuntimeException(e);
+                            }
                         }
                     } else {
                         DBUtils.printAlertMsg("Thông báo", "Không đúng thông tin đăng nhập!");
                     }
+                }
+            }
+        });
+        signup.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                try {
+                    // sau khi đăng ký thành công thì load giao diện đăng nhập
+                    DBUtils.changeScene(actionEvent, "Giaodiendangki.fxml", "Đăng ký",500,800 );
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
                 }
             }
         });

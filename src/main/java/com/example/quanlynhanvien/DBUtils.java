@@ -16,7 +16,9 @@ public class DBUtils {
     public static void changeScene(ActionEvent actionEvent,String fxmlFile, String title, int height, int width ) throws IOException {
         Parent root = null;
         root = FXMLLoader.load(DBUtils.class.getResource(fxmlFile));
+        // tìm giao diện đang hiển thị trên màn hình
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+
         stage.setTitle(title);
         stage.setScene(new Scene(root));
         // Lấy kích thước màn hình
