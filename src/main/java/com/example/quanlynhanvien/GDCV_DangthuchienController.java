@@ -24,6 +24,8 @@ public class GDCV_DangthuchienController implements Initializable {
 
     @FXML
     private TableView<?> table_taca;
+    @FXML
+    private Button bt_xemcongviec;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 

@@ -22,5 +22,10 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
+      <Button fx:id="bt_xemcongviec" layoutX="36.0" layoutY="407.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="167.0" text="Xem nội dung công việc ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

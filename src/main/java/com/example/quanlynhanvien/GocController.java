@@ -115,5 +115,16 @@ public class GocController implements Initializable {
                 }
             }
         });
+         dangxuat.setOnAction(new EventHandler<ActionEvent>() {
+             @Override
+             public void handle(ActionEvent actionEvent) {
+                 try {
+                     DBUtils.changeScene(actionEvent, "Giaodiendangki.fxml","trang đăng ký", 500,800);
+                 } catch (IOException e){
+                     throw new RuntimeException(e);
+                 }
+
+             }
+         });
     }
 }

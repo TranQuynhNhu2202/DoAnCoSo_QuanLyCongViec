@@ -124,5 +124,11 @@ public class GiaoDienNhanVienController implements Initializable {
                 }
             }
         });
+        tf_timkiem.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+
+            }
+        });
     }
 }
