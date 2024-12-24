@@ -12,6 +12,7 @@ import javafx.scene.control.TextField;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 
 public class GiaoDienDangKyController implements Initializable {
@@ -37,9 +38,12 @@ public class GiaoDienDangKyController implements Initializable {
                 String password = tf_password.getText();
                 if (!ten.isEmpty() && !Email.isEmpty() && !password.isEmpty()){
                     ConnectDB connectDB = new ConnectDB();
-                    String query ="INSERT INTO `taikhoan`(`Ten`, `password`, `Email`) VALUES ('"+ten+"','"+Email+"','"+password+"')";
+                    String query ="INSERT INTO `taikhoan`(`Ten`, `password`, `Email`) VALUES ('"+ten+"','"+password+"','"+Email+"')";
                     try {
                         int check = connectDB.getStmt().executeUpdate(query);
+                        query = "INSERT INTO `nhanvien`( `HoVaTen`, `Gmail`, `NgayBatDauLamViec`, `Trangthai`) VALUES ('"+ten+"','"+Email+"','"+ LocalDate.now() +"','2')";
+                        // truy vấn lên bảng nhân viên
+                        connectDB.getStmt().executeUpdate(query);
                         if (check != 0){
                             System.out.println(" Tạo tài khoản thành công !");
                             DBUtils.printAlertMsg("THÔNG BÁO ","Tạo tài khoản thành công.");

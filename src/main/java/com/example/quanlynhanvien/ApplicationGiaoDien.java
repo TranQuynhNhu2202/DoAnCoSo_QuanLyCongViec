@@ -9,9 +9,9 @@ import java.io.IOException;
 
 public class ApplicationGiaoDien extends Application {
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("GiaoDien.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ApplicationGiaoDien.class.getResource("GiaoDien.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Hello!");
+        stage.setTitle("Đăng nhập!");
         stage.setScene(scene);
         stage.show();
     }
